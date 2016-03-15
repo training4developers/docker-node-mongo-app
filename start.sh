@@ -1,5 +1,7 @@
 #!/bin/bash
 
+docker pull training4developers/node
+
 docker run -i -t \
 	-p 49160:3000 \
 	-v `pwd`/app:/opt/app \
