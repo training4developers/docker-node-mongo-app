@@ -1,11 +1,17 @@
-var express = require('express');
+module.exports = function(config) {
 
-// Constants
-var PORT = 3000;
+	"use strict";
 
-// App
-var app = express();
-app.use(express.static(require("path").join(__dirname, "www")));
-app.listen(PORT);
+	const
+		express = require('express'),
+		path = require("path");
 
-console.log('Running on http://localhost:' + PORT);
+	let
+		app = express();
+
+	app.use(express.static(path.join(__dirname, config.webServer.folder)));
+	app.listen(config.webServer.port, function() {
+		console.log('Running a web server on port ' + config.webServer.port);
+	});
+
+};
