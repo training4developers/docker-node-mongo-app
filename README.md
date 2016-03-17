@@ -1,4 +1,4 @@
-# Node.js Starter Application using Docker
+# Node.js & Mongo Starter Application using Docker
 
 The following Node.js Starter Application executes within a Docker environment.
 
