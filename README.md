@@ -1,6 +1,6 @@
-# Node.js & Mongo Starter Application using Docker
+# Node.js & MongoDB Starter Application using Docker
 
-The following Node.js Starter Application executes within a Docker environment.
+The following Node.js & MongoDB Starter Application executes within a Docker environment.
 
 ## Install Docker
 
@@ -71,3 +71,12 @@ Open a web browser, and navigate to http://docker-machine-ip-address:3000.
 ## Open an Editor
 
 Start an editor such as Atom, Sublime or Visual Studio Code, and open the folder to edit the Node.js application. When the files in the **www** folder are changed, the website can simply be refreshed in the web browser and the changes should appear. If changes are made outside the **www** folder, then the Node.js application will need to be restarted in the Docker container instance.
+
+## Connect RoboMongo
+
+Download [RoboMongo](https://robomongo.org/). Connect to the database using the following information:
+
+Host: IP address from above
+Port: 49161
+
+Authentication is not needed.
