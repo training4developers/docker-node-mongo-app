@@ -68,7 +68,7 @@ Start an editor such as Atom, Sublime or Visual Studio Code, and open the folder
 
 Download [RoboMongo](https://robomongo.org/). Connect to the database using the following information:
 
-Host: IP address from above
-Port: 49161
+- Host: Docker Machine IP address from above
+- Port: 49161
 
 Authentication is not needed.
