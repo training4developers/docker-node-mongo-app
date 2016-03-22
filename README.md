@@ -39,21 +39,7 @@ When the Docker container instance starts up, a Docker container instance termin
 ```bash
 $ cd /opt/app
 
-$ npm install
-
 $ node index
-```
-
-On Windows, **npm install** may fail. If it fails add the **--no-bin-link** option, and run the command again.
-
-```bash
-$ npm install --no-bin-link
-```
-
-On Mac with VMWare Fusion, **npm install** may fail because of user permission issues between the container and the host. If it fails, run the following command, then continue with the next command "node index" as listed above.
-
-```bash
-$ ./setup.sh
 ```
 
 These commands will start a web server which will be exposed through the external port of 3000 for the Docker instance.
