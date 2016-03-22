@@ -4,7 +4,7 @@ The following Node.js & MongoDB Starter Application executes within a Docker env
 
 ## Install Docker
 
-Download [Docker](https://www.docker.com/). Visit the Docker link, download the Docker installation program appropriate for your system (Mac or Windows), then run the installer.
+Download [Docker](https://www.docker.com/products/docker-toolbox). Visit the Docker link, download the Docker installation program appropriate for your system (Mac or Windows), then run the installer.
 
 #### Macs Only
 
@@ -48,6 +48,12 @@ On Windows, **npm install** may fail. If it fails add the **--no-bin-link** opti
 
 ```bash
 $ npm install --no-bin-link
+```
+
+On Mac with VMWare Fusion, **npm install** may fail because of user permission issues between the container and the host. If it fails, run the following command, then continue with the next command "node index" as listed above.
+
+```bash
+$ ./setup.sh
 ```
 
 These commands will start a web server which will be exposed through the external port of 3000 for the Docker instance.
